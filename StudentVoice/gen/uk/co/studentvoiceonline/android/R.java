@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package uk.co.studentvoiceonline;
+package uk.co.studentvoiceonline.android;
 
 public final class R {
     public static final class attr {

@@ -1,11 +1,13 @@
-package uk.co.studentvoiceonline;
+package uk.co.studentvoiceonline.android.activity;
 
-import static uk.co.studentvoiceonline.adapter.UniversitiesAdapter.forListing;
-import static uk.co.studentvoiceonline.adapter.UniversitiesAdapter.during;
+import static uk.co.studentvoiceonline.android.adapter.UniversitiesAdapter.during;
+import static uk.co.studentvoiceonline.android.adapter.UniversitiesAdapter.forListing;
 
 import java.util.List;
 
-import uk.co.studentvoiceonline.domain.University;
+import uk.co.studentvoiceonline.University;
+import uk.co.studentvoiceonline.UniversityExpert;
+import uk.co.studentvoiceonline.android.R;
 import android.app.ListActivity;
 import android.os.Bundle;
 

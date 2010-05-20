@@ -3,7 +3,6 @@ package uk.co.studentvoiceonline;
 import java.util.ArrayList;
 import java.util.List;
 
-import uk.co.studentvoiceonline.domain.University;
 
 public class UniversityExpert {
 

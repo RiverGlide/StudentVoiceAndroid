@@ -1,7 +1,7 @@
-package uk.co.studentvoiceonline.adapter;
+package uk.co.studentvoiceonline.android.adapter;
 import java.util.List;
 
-import uk.co.studentvoiceonline.domain.University;
+import uk.co.studentvoiceonline.University;
 import android.content.Context;
 import android.widget.ArrayAdapter;
 
