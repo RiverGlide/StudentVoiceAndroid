@@ -2,7 +2,7 @@ package uk.co.studentvoiceonline;
 
 import java.util.List;
 
-import static uk.co.studentvoiceonline.adapter.Universities.arrayOf;
+import static uk.co.studentvoiceonline.UniversityExpert.arrayOf;
 
 import android.app.ListActivity;
 import android.os.Bundle;

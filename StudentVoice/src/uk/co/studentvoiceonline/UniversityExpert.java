@@ -27,4 +27,9 @@ public class UniversityExpert {
 		}
 		return universityList;			
 	}
+
+	public static University[] arrayOf(List<University> list) {
+		University[] universities = new University[]{};
+		return list.toArray(universities);
+	}
 }
