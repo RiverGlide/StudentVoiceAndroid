@@ -17,6 +17,8 @@ import android.widget.ListView;
 public class ViewUniversities extends ListActivity {
     private static final int VIEW_DETAILS = 1;
 	private static final int VIEW_UNIVERSITIES_LAYOUT = R.layout.view_universities;
+	public static University currentUniversity; //FIXME
+	
 	private List<University> theUniversities;
 
     @Override
@@ -31,8 +33,9 @@ public class ViewUniversities extends ListActivity {
     protected void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
         Intent i = new Intent(this, ViewUniversityDetails.class);
-
-        i.putExtra("THE UNIVERSITY",id);
+        University[] universities = new University[]{};
+        universities = theUniversities.toArray(universities);
+        currentUniversity = universities[position];
         startActivityForResult(i, VIEW_DETAILS);
     }
 
