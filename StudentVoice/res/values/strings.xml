@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, StudentVoice!</string>
     <string name="app_name">StudentVoice</string>
+    <string name="hint">Start typing to filter the list...</string>
 </resources>

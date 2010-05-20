@@ -3,7 +3,8 @@
       package="uk.co.studentvoiceonline"
       android:versionCode="1"
       android:versionName="1.0">
-    <application android:icon="@drawable/icon" android:label="@string/app_name">
+    <application android:icon="@drawable/icon" 
+    	android:label="@string/app_name">
         <activity android:name=".StudentVoice"
                   android:label="@string/app_name">
             <intent-filter>
@@ -13,6 +14,6 @@
         </activity>
 
     </application>
-    <uses-sdk android:minSdkVersion="3" />
+    <uses-sdk android:minSdkVersion="7" />
 
 </manifest> 
