@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">StudentVoice</string>
     <string name="hint">Start typing to filter the list...</string>
+    <string name="additional_details">Additional Details will go here</string>
 </resources>
