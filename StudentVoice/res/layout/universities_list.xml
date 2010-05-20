@@ -10,7 +10,7 @@
 	    android:text="@string/hint"
 	    />
 	<ListView android:id="@+id/android:list" 
-		android:layout_width="wrap_content" 
+		android:layout_width="fill_parent" 
 		android:layout_height="wrap_content">
 	</ListView>
 </LinearLayout>
