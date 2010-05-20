@@ -3,6 +3,8 @@ package uk.co.studentvoiceonline;
 import java.util.ArrayList;
 import java.util.List;
 
+import uk.co.studentvoiceonline.domain.University;
+
 public class UniversityExpert {
 
 	public List<University> whatAreTheUniversities() {
@@ -26,10 +28,5 @@ public class UniversityExpert {
 			universityList.add(new University(name));
 		}
 		return universityList;			
-	}
-
-	public static University[] arrayOf(List<University> list) {
-		University[] universities = new University[]{};
-		return list.toArray(universities);
 	}
 }

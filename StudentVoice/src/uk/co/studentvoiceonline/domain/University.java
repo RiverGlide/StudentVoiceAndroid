@@ -1,4 +1,4 @@
-package uk.co.studentvoiceonline;
+package uk.co.studentvoiceonline.domain;
 
 public class University {
 
