@@ -2,6 +2,8 @@ package uk.co.studentvoiceonline;
 
 import java.util.List;
 
+import static uk.co.studentvoiceonline.adapter.Universities.arrayOf;
+
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
@@ -13,10 +15,12 @@ public class ViewUniversities extends ListActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        
         display(theUniversities());
         enableUserToFilterTextByTyping();
     }
 
+    ////////////////////////////////////////////////////////
 	private void display(List<University> theUniversities) {
 		setContentView(VIEW_UNIVERSITIES_LAYOUT);
 		setListAdapter(forListing(theUniversities));
@@ -30,16 +34,11 @@ public class ViewUniversities extends ListActivity {
 		return new ArrayAdapter<University>(
 				this,
 				LIST_LAYOUT,
-				arrayFrom(theUniversities)
+				arrayOf(theUniversities)
 				);
 	}
 
 	private List<University> theUniversities() {
 		return new UniversityExpert().whatAreTheUniversities();
 	}
-
-	private University[] arrayFrom(List<University> listOfUniversities) {
-		University[] universities = new University[]{};
-		return listOfUniversities.toArray(universities);
-	}	
 }
