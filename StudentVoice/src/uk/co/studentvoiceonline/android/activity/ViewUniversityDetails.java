@@ -11,6 +11,6 @@ public class ViewUniversityDetails extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.view_university_detail);
 		TextView text = (TextView)findViewById(R.id.university_name);
-		text.setText("Name: " + ViewUniversities.theChosenUniversity + "\n");
+		text.setText(ViewUniversities.theChosenUniversity.name() + "\n");
 	}
 }
