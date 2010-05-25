@@ -1,6 +1,7 @@
 package uk.co.studentvoiceonline;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 
@@ -30,7 +31,7 @@ public class UniversityExpert {
 				"Court auld Institute of Art",
 				"University of Greenwich"
 				};
-		
+		Arrays.sort(uniNames);
 		ArrayList<University> universityList = new ArrayList<University>();
 		
 		for (String name : uniNames) {
