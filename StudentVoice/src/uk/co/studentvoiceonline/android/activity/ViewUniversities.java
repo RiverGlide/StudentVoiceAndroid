@@ -10,7 +10,9 @@ import uk.co.studentvoiceonline.UniversityExpert;
 import uk.co.studentvoiceonline.android.R;
 import android.app.Activity;
 import android.app.ListActivity;
+import android.content.ComponentName;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
@@ -37,7 +39,14 @@ public class ViewUniversities extends ListActivity {
         super.onListItemClick(l, v, inThisPosition, id);
 
         theChosenUniversity = theUniversity(inThisPosition);
-        showItsDetails();
+        
+        Intent i = new Intent(
+        		"android.intent.action.VIEW",
+        		Uri.parse("http://maps.google.com/maps?q=" + theChosenUniversity.name())
+        		);
+        i.setComponent(new ComponentName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity"));
+        startActivity(i);
+
     }
 
 	////////////////////////////////////////////////////////
@@ -68,12 +77,6 @@ public class ViewUniversities extends ListActivity {
 		Intent i = new Intent(this, activityClass);
         startActivityForResult(i, requestCode);
         
-//      [am] Left here as we will refer to this shortly  
-//        i = new Intent("android.intent.action.VIEW",
-//				Uri.parse("http://maps.google.com/maps?q=" + theChosenUniversity.toString()));
-//        		i.setComponent(new ComponentName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity")
-//        		);
-//        startActivity(i);
 	}
 
 	private Class<? extends Activity> definedByThe(
