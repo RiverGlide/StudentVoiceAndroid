@@ -39,15 +39,9 @@ public class ViewUniversities extends ListActivity {
         super.onListItemClick(l, v, inThisPosition, id);
 
         theChosenUniversity = theUniversity(inThisPosition);
-        
-        Intent i = new Intent(
-        		"android.intent.action.VIEW",
-        		Uri.parse("http://maps.google.com/maps?q=" + theChosenUniversity.name())
-        		);
-        i.setComponent(new ComponentName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity"));
-        startActivity(i);
-
+        showTheUniversityOnTheMap();
     }
+
 
 	////////////////////////////////////////////////////////
 	private void showAListOf(List<University> theUniversities) {
@@ -67,6 +61,15 @@ public class ViewUniversities extends ListActivity {
 		University[] universities = new University[]{};
         universities = theUniversities.toArray(universities);
         return universities[fromThisPosition];
+	}
+
+	private void showTheUniversityOnTheMap() {
+		Intent i = new Intent(
+				"android.intent.action.VIEW",
+				Uri.parse("http://maps.google.com/maps?q=" + theChosenUniversity.name())
+		);
+		i.setComponent(new ComponentName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity"));
+		startActivity(i);
 	}
 
 	private void showItsDetails() {
