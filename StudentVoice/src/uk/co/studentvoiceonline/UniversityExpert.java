@@ -28,7 +28,7 @@ public class UniversityExpert {
 				"Queen Mary, University of London",
 				"Goldsmiths, University of London",
 				"School of Oriental and African Studies", 
-				"Court auld Institute of Art",
+				"Courtauld Institute of Art (University of London)",
 				"University of Greenwich"
 				};
 		Arrays.sort(uniNames);
