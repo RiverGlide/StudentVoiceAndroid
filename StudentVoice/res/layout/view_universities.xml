@@ -4,48 +4,17 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
-    <RelativeLayout
-    	android:layout_width="fill_parent"
-    	android:layout_height="wrap_content">
-	    <ImageView
-	    	android:id="@+id/svicon"
-	    	android:src="@drawable/svicon"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-	    />
-	    <TextView
-	        android:text="@string/app_name"
-	        android:layout_width="wrap_content" 
-		    android:layout_height="wrap_content"
-		    android:textSize="25sp"
-		    android:typeface="serif"
-		    android:textStyle="bold"
-		    android:layout_centerVertical="true"
-		    android:layout_toRightOf="@+id/svicon"
-		/>
-	</RelativeLayout>
-  	<View
-		android:layout_height="1px"
-		android:layout_width="fill_parent"
-		android:background="#808080"
-		android:paddingTop="1sp"
-		android:paddingBottom="2sp"
-		
-	/>
+    <include layout="@layout/common_header" />
+    <include layout="@layout/common_separator" />
 	<TextView  
 	    android:layout_width="fill_parent" 
 	    android:layout_height="wrap_content" 
 	    android:text="@string/hint"
 	    android:padding="5sp"
 	    />
-	<View
-		android:layout_height="1px"
-		android:layout_width="fill_parent"
-		android:background="#808080"
-		android:paddingTop="1sp"
-		android:paddingBottom="2sp"
-		
-	/>
+
+	<include layout="@layout/common_separator" />
+
 	<ListView android:id="@+id/android:list" 
 		android:layout_width="fill_parent" 
 		android:layout_height="fill_parent"

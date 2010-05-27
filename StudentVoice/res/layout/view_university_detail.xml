@@ -4,6 +4,8 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
+    <include layout="@layout/common_header"/>
+    <include layout="@layout/common_separator" />
 	<TextView
 		android:id="@+id/university_name" 
 	    android:layout_width="fill_parent" 
