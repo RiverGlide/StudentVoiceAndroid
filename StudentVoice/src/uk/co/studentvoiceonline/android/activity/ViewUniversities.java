@@ -10,19 +10,12 @@ import uk.co.studentvoiceonline.UniversityExpert;
 import uk.co.studentvoiceonline.android.R;
 import android.app.Activity;
 import android.app.ListActivity;
-import android.content.ComponentName;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
 
 public class ViewUniversities extends ListActivity {
-    private static final String MAPS_ACTIVITY_NAME = "com.google.android.maps.MapsActivity";
-	private static final String GOOGLE_MAPS_PACKAGE_NAME = "com.google.android.apps.maps";
-	private static final ComponentName GOOGLE_MAPS = new ComponentName(GOOGLE_MAPS_PACKAGE_NAME, MAPS_ACTIVITY_NAME);
-	private static final String MAPS_BASE_URL = "http://maps.google.com/maps?q=";
-	private static final String VIEW = "android.intent.action.VIEW";
 	private static final int VIEW_DETAILS = 1;
 	private static final int VIEW_UNIVERSITIES_LAYOUT = R.layout.view_universities;
 	public static University theChosenUniversity; //FIXME
@@ -42,7 +35,6 @@ public class ViewUniversities extends ListActivity {
         super.onListItemClick(l, v, thePositionSelected, id);
 
         theChosenUniversity = theUniversityIn(thePositionSelected);
-//        showAMapDisplaying(theChosenUniversity);
         showItsDetails();
     }
 
@@ -65,20 +57,6 @@ public class ViewUniversities extends ListActivity {
 		University[] universities = new University[]{};
         universities = theUniversities().toArray(universities);
         return universities[fromThisPosition];
-	}
-
-	private void showAMapDisplaying(University theChosenUniversity) {
-		Intent theIntent = new Intent(VIEW,	mapBasedOnAQueryFor(theChosenUniversity));
-		askGoogleMapsToDisplayTheResultFor(theIntent);
-	}
-
-	private void askGoogleMapsToDisplayTheResultFor(Intent i) {
-		i.setComponent(GOOGLE_MAPS);
-		startActivity(i);
-	}
-
-	private Uri mapBasedOnAQueryFor(University theChosenUniversity) {
-		return Uri.parse(MAPS_BASE_URL + theChosenUniversity.name());
 	}
 
 	private void showItsDetails() {

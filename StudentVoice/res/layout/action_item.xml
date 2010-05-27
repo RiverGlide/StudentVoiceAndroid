@@ -6,18 +6,19 @@
     android:hapticFeedbackEnabled="true"
     >
 	<TextView
-		android:id="@+id/university_name"
+		android:id="@+id/action_name"
 	    android:layout_height="wrap_content" 
-	    android:layout_width="fill_parent"
+	    android:layout_width="wrap_content"
 	    android:textSize="20sp"
 	    android:ellipsize="end"	    
 	    android:scrollHorizontally="true" 
+	    android:layout_marginTop="20sp"
+	    android:layout_marginBottom="20sp"
 	    android:layout_marginLeft="5sp"
+	    android:layout_marginRight="5sp"
 	    android:layout_centerVertical="true"
-	    android:layout_toLeftOf="@+id/go_mark"
-	    /> 
-	<TextView
-		android:id="@+id/go_mark"
+	    />
+	 <TextView
 	 	android:text=">"
 	 	android:layout_height="wrap_content" 
 	    android:layout_width="wrap_content"
@@ -25,8 +26,8 @@
 	 	android:textStyle="bold"
 	 	android:layout_marginTop="20sp"
 	    android:layout_marginBottom="20sp"
-	    android:layout_marginLeft="10sp"
-	    android:layout_marginRight="10sp"
+	    android:layout_marginLeft="5sp"
+	    android:layout_marginRight="5sp"
 	    android:layout_alignParentRight="true"
 	    android:layout_centerVertical="true"
 	 />
