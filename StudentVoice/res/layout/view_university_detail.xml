@@ -12,6 +12,7 @@
 	    android:layout_height="wrap_content"
 	    android:textSize="25sp"
 	    />
+	<include layout="@layout/common_separator" />
 	<ListView android:id="@+id/android:list" 
 		android:layout_width="fill_parent" 
 		android:layout_height="fill_parent"
