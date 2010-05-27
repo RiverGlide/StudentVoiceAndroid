@@ -27,24 +27,23 @@ public class ViewUniversities extends ListActivity {
 	private static final int VIEW_UNIVERSITIES_LAYOUT = R.layout.view_universities;
 	public static University theChosenUniversity; //FIXME
 	
-	private List<University> theUniversities;
 	private ViewUniversities thisVeryActivity = this;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        theUniversities = theUniversities();
-        showAListOf(theUniversities);
+        showAListOf(theUniversities());
         theUserCanFilterThemByTyping();
     }
     
     @Override
-    protected void onListItemClick(ListView l, View v, int inThisPosition, long id) {
-        super.onListItemClick(l, v, inThisPosition, id);
+    protected void onListItemClick(ListView l, View v, int thePositionSelected, long id) {
+        super.onListItemClick(l, v, thePositionSelected, id);
 
-        theChosenUniversity = theUniversity(inThisPosition);
-        showTheUniversityOnTheMap();
+        theChosenUniversity = theUniversityIn(thePositionSelected);
+//        showAMapDisplaying(theChosenUniversity);
+        showItsDetails();
     }
 
 
@@ -62,13 +61,13 @@ public class ViewUniversities extends ListActivity {
 		return new UniversityExpert().whatAreTheUniversities();
 	}
 	
-	private University theUniversity(int fromThisPosition) {
+	private University theUniversityIn(int fromThisPosition) {
 		University[] universities = new University[]{};
-        universities = theUniversities.toArray(universities);
+        universities = theUniversities().toArray(universities);
         return universities[fromThisPosition];
 	}
 
-	private void showTheUniversityOnTheMap() {
+	private void showAMapDisplaying(University theChosenUniversity) {
 		Intent theIntent = new Intent(VIEW,	mapBasedOnAQueryFor(theChosenUniversity));
 		askGoogleMapsToDisplayTheResultFor(theIntent);
 	}
@@ -96,5 +95,4 @@ public class ViewUniversities extends ListActivity {
 			Class<? extends Activity> activityClass) {
 		return activityClass;
 	}
-
 }

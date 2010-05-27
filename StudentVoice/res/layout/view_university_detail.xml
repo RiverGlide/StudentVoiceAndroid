@@ -8,11 +8,13 @@
 		android:id="@+id/university_name" 
 	    android:layout_width="fill_parent" 
 	    android:layout_height="wrap_content"
-	    android:textSize="40sp"
+	    android:textSize="25sp"
 	    />
-	<TextView  
+	<TextView 
+		android:id="@+id/ucas_link"
 	    android:layout_width="fill_parent" 
-	    android:layout_height="wrap_content" 
-	    android:text="@string/additional_details"
+	    android:layout_height="wrap_content"
+	    android:textSize="20sp"
+	    android:textColorLink="#c0c0c0ff"
 	    />
 </LinearLayout>

@@ -3,9 +3,11 @@ package uk.co.studentvoiceonline;
 public class University {
 
 	private final String name;
+	private final String ucasLink;
 
-	public University(String name) {
+	public University(String name, String ucasLink) {
 		this.name = name;
+		this.ucasLink = ucasLink;
 	}
 	
 	public String name() {
@@ -14,5 +16,9 @@ public class University {
 	
 	public String toString() {
 		return name;
+	}
+
+	public String ucasLink() {
+		return ucasLink;
 	}
 }
