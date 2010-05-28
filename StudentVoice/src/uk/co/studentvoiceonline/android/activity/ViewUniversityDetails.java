@@ -18,7 +18,6 @@ import android.widget.TextView;
 public class ViewUniversityDetails extends ListActivity {
 
 	private List<Action> actions;
-	private static final String VIEW = "android.intent.action.VIEW";//FIXME
 	
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -42,7 +41,7 @@ public class ViewUniversityDetails extends ListActivity {
 		
 		List<Action> actions = Arrays.asList(
 				mapFor(theChosenUniversity),
-				ucasPageFor(theChosenUniversity)				
+				viewUcasInfoAbout(theChosenUniversity)				
 				);
 		
 		setListAdapter(new ArrayAdapter<Action>(this,
@@ -52,17 +51,12 @@ public class ViewUniversityDetails extends ListActivity {
 		return actions;
 	}
 
-	private Action ucasPageFor(University theChosenUniversity) {
-		return new Action(takingTheUserToUcas(theChosenUniversity), "UCAS information", this);
+	private ViewOnUcasWebsite viewUcasInfoAbout(University theChosenUniversity) {
+		return new ViewOnUcasWebsite(theChosenUniversity.ucasLink(),this);
 	}
 
 	private Action mapFor(University theChosenUniversity) {
 		return new TypicalMapSearch(theChosenUniversity.name(),this);
-	}
-
-	private Intent takingTheUserToUcas(University theChosenUniversity) {
-		Intent theIntent = new Intent(VIEW,	Uri.parse(theChosenUniversity.ucasLink()));
-		return theIntent;
 	}
 
 	private void showTheNameOf(University theChosenUniversity) {
