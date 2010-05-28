@@ -5,8 +5,8 @@ import java.util.List;
 
 import uk.co.studentvoiceonline.University;
 import uk.co.studentvoiceonline.android.R;
+import uk.co.studentvoiceonline.android.activity.action.TypicalMapSearch;
 import android.app.ListActivity;
-import android.content.ComponentName;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -16,12 +16,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 public class ViewUniversityDetails extends ListActivity {
-	private static final String VIEW = "android.intent.action.VIEW";
-	private static final String MAPS_ACTIVITY_NAME = "com.google.android.maps.MapsActivity";
-	private static final String GOOGLE_MAPS_PACKAGE_NAME = "com.google.android.apps.maps";
-	private static final ComponentName GOOGLE_MAPS = new ComponentName(GOOGLE_MAPS_PACKAGE_NAME, MAPS_ACTIVITY_NAME);
-	private static final String MAPS_BASE_URL = "http://maps.google.com/maps?q=";
+
 	private List<Action> actions;
+	private static final String VIEW = "android.intent.action.VIEW";//FIXME
 	
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -42,9 +39,10 @@ public class ViewUniversityDetails extends ListActivity {
     }
 	
 	private List<Action> theActionsFor(University theChosenUniversity) {
+		
 		List<Action> actions = Arrays.asList(
-				new Action(showAMapDisplaying(theChosenUniversity), "View on Map", this),
-				new Action(takingTheUserToUcas(theChosenUniversity), "UCAS information", this)
+				mapFor(theChosenUniversity),
+				ucasPageFor(theChosenUniversity)				
 				);
 		
 		setListAdapter(new ArrayAdapter<Action>(this,
@@ -52,6 +50,14 @@ public class ViewUniversityDetails extends ListActivity {
 				R.id.action_name,
 				actions));
 		return actions;
+	}
+
+	private Action ucasPageFor(University theChosenUniversity) {
+		return new Action(takingTheUserToUcas(theChosenUniversity), "UCAS information", this);
+	}
+
+	private Action mapFor(University theChosenUniversity) {
+		return new TypicalMapSearch(theChosenUniversity.name(),this);
 	}
 
 	private Intent takingTheUserToUcas(University theChosenUniversity) {
@@ -63,15 +69,4 @@ public class ViewUniversityDetails extends ListActivity {
 		TextView text = (TextView)findViewById(R.id.university_name);
 		text.setText(theChosenUniversity.name() + "\n");
 	}
-	
-	private Intent showAMapDisplaying(University theChosenUniversity) {
-		Intent theIntent = new Intent(VIEW,	mapBasedOnAQueryFor(theChosenUniversity));
-		theIntent.setComponent(GOOGLE_MAPS);
-		return theIntent;
-	}
-	
-	private Uri mapBasedOnAQueryFor(University theChosenUniversity) {
-		return Uri.parse(MAPS_BASE_URL + theChosenUniversity.name());
-	}
-
 }
