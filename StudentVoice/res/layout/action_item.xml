@@ -5,6 +5,13 @@
     android:layout_height="fill_parent"
     android:hapticFeedbackEnabled="true"
     >
+    <ImageView
+    	android:id="@+id/action_icon"
+	    android:layout_height="wrap_content" 
+	    android:layout_width="wrap_content"
+    	android:src="@drawable/ucas"
+    	android:padding="20sp"
+    />
 	<TextView
 		android:id="@+id/action_name"
 	    android:layout_height="wrap_content" 
@@ -17,6 +24,7 @@
 	    android:layout_marginLeft="5sp"
 	    android:layout_marginRight="5sp"
 	    android:layout_centerVertical="true"
+	    android:layout_toRightOf="@+id/action_icon"
 	    />
 	 <TextView
 	 	android:text=">"

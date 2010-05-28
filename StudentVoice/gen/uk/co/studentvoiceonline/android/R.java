@@ -11,14 +11,28 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static final int icon=0x7f020000;
-        public static final int svicon=0x7f020001;
+        public static final int bars_clubs=0x7f020000;
+        public static final int cafe=0x7f020001;
+        public static final int cinema=0x7f020002;
+        public static final int eating_out=0x7f020003;
+        public static final int fast_food=0x7f020004;
+        public static final int icon=0x7f020005;
+        public static final int libraries=0x7f020006;
+        public static final int map=0x7f020007;
+        public static final int romantic_places=0x7f020008;
+        public static final int shopping_centres=0x7f020009;
+        public static final int splash=0x7f02000a;
+        public static final int splash_large=0x7f02000b;
+        public static final int svicon=0x7f02000c;
+        public static final int topbar=0x7f02000d;
+        public static final int ucas=0x7f02000e;
     }
     public static final class id {
-        public static final int action_name=0x7f050000;
-        public static final int go_mark=0x7f050003;
-        public static final int svicon=0x7f050001;
-        public static final int university_name=0x7f050002;
+        public static final int action_icon=0x7f050000;
+        public static final int action_name=0x7f050001;
+        public static final int go_mark=0x7f050004;
+        public static final int svicon=0x7f050002;
+        public static final int university_name=0x7f050003;
     }
     public static final class layout {
         public static final int action_item=0x7f030000;
