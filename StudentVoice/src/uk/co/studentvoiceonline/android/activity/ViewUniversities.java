@@ -54,9 +54,7 @@ public class ViewUniversities extends ListActivity {
 	}
 	
 	private University theUniversityIn(int fromThisPosition) {
-		University[] universities = new University[]{};
-        universities = theUniversities().toArray(universities);
-        return universities[fromThisPosition];
+		return (University)getListAdapter().getItem(fromThisPosition);
 	}
 
 	private void showItsDetails() {
