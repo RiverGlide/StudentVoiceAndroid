@@ -29,13 +29,21 @@
 	    android:padding="5sp"
 	    android:gravity="center_horizontal"
 	    android:layout_below="@+id/logo"
+	    android:autoLink="email"
 	    />
+	<View
+		android:id="@+id/spacer"
+		android:layout_width="fill_parent"
+		android:layout_height="10px"
+		android:layout_below="@+id/message"
+	/>
+		
 	<Button
 		android:id="@+id/next"
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
 		android:text="Continue"
-		android:layout_below="@+id/message"
+		android:layout_below="@+id/spacer"
 	/>
 	</RelativeLayout>
 	</ScrollView>

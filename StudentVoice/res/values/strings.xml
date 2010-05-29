@@ -3,16 +3,17 @@
     <string name="app_name">StudentVoice</string>
     <string name="hint">Start typing to filter the list...</string>
     <string name="welcome">
-    StudentVoice enables prospective and current University students to 
-    locate Uni’s, local attractions and view public reviews about a Univeristy.\n\n
+    StudentVoice enables prospective and current university students in London to 
+    locate Uni’s, local attractions and view public reviews about a univeristy.\n\n
     
-    Created during CDI Europe’s Apps For Good course, this version of the App 
-    represents what we were able to achieve with only 3 hours a day for 4 weeks,
-    never having created an App before. Watch this space for the next version.\n\n
+    This is our first attempt at software development. Created during CDI Europe’s 
+    pilot Apps For Good course and guided by Antony Marcano of RiverGlide, 
+    this was implemented in 3 hours a day over 3 weeks (so far). 
+    Our future vision includes writing your own reviews, social network integration
+     and coverage of all UK universities.\n\n
     
-     - Moses Sonson, Carlos Mateus, Matthew Tanti -\n\n
-
-	talktous@studentvoiceonline.co.uk
+    talktous@studentvoiceonline.co.uk\n\n
+     - Carlos Mateus - Moses Sonson - Matthew Tanti -
    
     </string>
 </resources>
