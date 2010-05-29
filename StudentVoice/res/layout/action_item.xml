@@ -10,7 +10,7 @@
 	    android:layout_height="wrap_content" 
 	    android:layout_width="wrap_content"
     	android:src="@drawable/ucas"
-    	android:padding="20sp"
+    	android:layout_centerVertical="true"
     />
 	<TextView
 		android:id="@+id/action_name"
@@ -38,5 +38,6 @@
 	    android:layout_marginRight="5sp"
 	    android:layout_alignParentRight="true"
 	    android:layout_centerVertical="true"
+	   	android:textColor="#c0c0c0"
 	 />
 </RelativeLayout>

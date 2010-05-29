@@ -4,11 +4,10 @@
     android:layout_height="wrap_content">
 
   	<View xmlns:android="http://schemas.android.com/apk/res/android"
-		android:layout_height="1px"
+		android:layout_height="2px"
 		android:layout_width="fill_parent"
-		android:background="#808080"
-		android:paddingTop="1sp"
-		android:paddingBottom="2sp"
-		
+		android:background="#c0c0c0"
+		android:paddingTop="2sp"
+		android:paddingBottom="2sp"	
 	/>
 </LinearLayout>

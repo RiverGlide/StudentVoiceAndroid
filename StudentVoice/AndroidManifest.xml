@@ -3,12 +3,22 @@
       package="uk.co.studentvoiceonline.android"
       android:versionCode="1"
       android:versionName="1.0">
-    <application android:label="@string/app_name" android:icon="@drawable/svicon">
-        <activity android:name=".activity.ViewUniversities"
+    <application 
+    	android:label="@string/app_name" 
+    	android:icon="@drawable/svicon" 
+    	android:theme="@android:style/Theme.Light">
+        <activity android:name=".activity.Welcome"
                   android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ViewUniversities"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="co.uk.studentvoice.intent.VIEW_UNIVERSITIES" />
+                <category android:name="co.uk.studentvoice.intent.VIEW_UNIVERSITIES" />
             </intent-filter>
         </activity>
         <activity android:name=".activity.ViewUniversityDetails"

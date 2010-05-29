@@ -1,6 +1,6 @@
 package uk.co.studentvoiceonline.android.activity.action;
 
-import uk.co.studentvoiceonline.android.activity.Action;
+import uk.co.studentvoiceonline.android.R;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -17,6 +17,7 @@ public class TypicalMapSearch extends Action {
 
 	public TypicalMapSearch(String thingToSearchFor, Context activity) {
 		super(showAMapDisplaying(thingToSearchFor), ACTION_ITEM_LABEL, activity);
+		iconReference=R.drawable.map;
 	}
 	
 	private static Intent showAMapDisplaying(String thingToSearchFor) {

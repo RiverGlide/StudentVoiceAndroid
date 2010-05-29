@@ -18,7 +18,7 @@ import android.widget.ListView;
 public class ViewUniversities extends ListActivity {
 	private static final int VIEW_DETAILS = 1;
 	private static final int VIEW_UNIVERSITIES_LAYOUT = R.layout.view_universities;
-	public static University theChosenUniversity; //FIXME
+	public static University theChosenUniversity; //FIXME: should at least use a preference
 	
 	private ViewUniversities thisVeryActivity = this;
 
@@ -66,7 +66,6 @@ public class ViewUniversities extends ListActivity {
 	private void transitionTo(int requestCode, Class<? extends Activity> activityClass) {
 		Intent i = new Intent(this, activityClass);
         startActivityForResult(i, requestCode);
-        
 	}
 
 	private Class<? extends Activity> definedByThe(

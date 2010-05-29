@@ -10,7 +10,8 @@
 		android:id="@+id/university_name" 
 	    android:layout_width="fill_parent" 
 	    android:layout_height="wrap_content"
-	    android:textSize="25sp"
+	    android:textSize="20sp"
+	    android:textColor="#505050"
 	    />
 	<include layout="@layout/common_separator" />
 	<ListView android:id="@+id/android:list" 

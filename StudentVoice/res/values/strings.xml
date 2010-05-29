@@ -2,4 +2,17 @@
 <resources>
     <string name="app_name">StudentVoice</string>
     <string name="hint">Start typing to filter the list...</string>
+    <string name="welcome">
+    StudentVoice enables prospective and current University students to 
+    locate Uni’s, local attractions and view public reviews about a Univeristy.\n\n
+    
+    Created during CDI Europe’s Apps For Good course, this version of the App 
+    represents what we were able to achieve with only 3 hours a day for 4 weeks,
+    never having created an App before. Watch this space for the next version.\n\n
+    
+     - Moses Sonson, Carlos Mateus, Matthew Tanti -\n\n
+
+	talktous@studentvoiceonline.co.uk
+   
+    </string>
 </resources>
