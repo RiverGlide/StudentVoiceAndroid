@@ -2,7 +2,6 @@ package uk.co.studentvoiceonline.android.activity.action;
 
 import uk.co.studentvoiceonline.android.R;
 import uk.co.studentvoiceonline.android.activity.FindLocalAttractions;
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 
@@ -11,8 +10,11 @@ public class ViewLocalAttractions extends Action {
 	public static final String label = "Local Attractions";
 	public static final int ICON = R.drawable.local_attractions;
 	
+	public static ViewLocalAttractions showLocalAttractionsMenuFollowing(Context activity) {
+		return new ViewLocalAttractions(activity);
+	}
 	
-	public ViewLocalAttractions(Context activity) {
+	private ViewLocalAttractions(Context activity) {
 		super(localAttractions(activity), label, activity, ICON);
 	}
 

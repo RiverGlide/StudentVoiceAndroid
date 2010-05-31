@@ -15,7 +15,11 @@ public class TypicalMapSearch extends Action {
 	private static final String MAPS_BASE_URL = "http://maps.google.com/maps?q=";
 	private static final String VIEW = "android.intent.action.VIEW";
 
-	public TypicalMapSearch(String thingToSearchFor, Context activity) {
+	public static TypicalMapSearch searchMapsFor(Context activity, String searchString) {
+		return new TypicalMapSearch(searchString, activity);
+	}
+	
+	private TypicalMapSearch(String thingToSearchFor, Context activity) {
 		super(showAMapDisplaying(thingToSearchFor), ACTION_ITEM_LABEL, activity, R.drawable.map);
 	}
 	

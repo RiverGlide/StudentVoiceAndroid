@@ -1,5 +1,6 @@
 package uk.co.studentvoiceonline.android.activity;
 
+import java.util.Arrays;
 import java.util.List;
 
 import uk.co.studentvoiceonline.University;
@@ -43,5 +44,9 @@ public abstract class UniversityActionsListActivity extends ListActivity {
 
 	private void showTheActionsFor(University theChosenUniversity) {	
 		setListAdapter(new ActionsAdapter(this,	actions));
+	}
+
+	protected List<Action> theFollowing(Action...list) {
+		return Arrays.asList(list);
 	}
 }
