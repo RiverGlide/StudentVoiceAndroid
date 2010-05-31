@@ -20,13 +20,14 @@ public final class R {
         public static final int icon=0x7f020006;
         public static final int libraries=0x7f020007;
         public static final int map=0x7f020008;
-        public static final int romantic_places=0x7f020009;
-        public static final int shopping_centres=0x7f02000a;
-        public static final int svicon=0x7f02000b;
-        public static final int svsplash=0x7f02000c;
-        public static final int svsplash_large=0x7f02000d;
-        public static final int svtopbar=0x7f02000e;
-        public static final int ucas=0x7f02000f;
+        public static final int reviews=0x7f020009;
+        public static final int romantic_places=0x7f02000a;
+        public static final int shopping_centres=0x7f02000b;
+        public static final int svicon=0x7f02000c;
+        public static final int svsplash=0x7f02000d;
+        public static final int svsplash_large=0x7f02000e;
+        public static final int svtopbar=0x7f02000f;
+        public static final int ucas=0x7f020010;
     }
     public static final class id {
         public static final int action_icon=0x7f050000;

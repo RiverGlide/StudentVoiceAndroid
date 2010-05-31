@@ -4,10 +4,14 @@ public class University {
 
 	private final String name;
 	private final String ucasLink;
+	private final String qypeLink;
+	private final String placeId;
 
-	public University(String name, String ucasLink) {
+	public University(String name, String placeId, String ucasLink, String qypeLink) {
 		this.name = name;
+		this.placeId = placeId;
 		this.ucasLink = ucasLink;
+		this.qypeLink = qypeLink;
 	}
 	
 	public String name() {
@@ -21,5 +25,13 @@ public class University {
 
 	public String ucasLink() {
 		return ucasLink;
+	}
+	
+	public String qypeLink() {
+		return qypeLink;
+	}
+
+	public String placeId() {
+		return placeId;
 	}
 }

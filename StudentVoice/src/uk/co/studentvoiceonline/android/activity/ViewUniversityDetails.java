@@ -7,6 +7,7 @@ import uk.co.studentvoiceonline.University;
 import uk.co.studentvoiceonline.android.R;
 import uk.co.studentvoiceonline.android.activity.action.Action;
 import uk.co.studentvoiceonline.android.activity.action.TypicalMapSearch;
+import uk.co.studentvoiceonline.android.activity.action.ViewOnQypeWebsite;
 import uk.co.studentvoiceonline.android.activity.action.ViewOnUcasWebsite;
 import uk.co.studentvoiceonline.android.adapter.ActionsAdapter;
 import android.app.ListActivity;
@@ -43,8 +44,9 @@ public class ViewUniversityDetails extends ListActivity {
 	private List<Action> theActionsFor(University theChosenUniversity) {
 		
 		List<Action> actions = Arrays.asList(
+				new ViewOnQypeWebsite(theChosenUniversity.qypeLink(),this),
 				mapFor(theChosenUniversity),
-				viewUcasInfoAbout(theChosenUniversity)				
+				viewUcasInfoAbout(theChosenUniversity)
 				);
 		
 		setListAdapter(new ActionsAdapter(this,	actions));
