@@ -3,8 +3,9 @@
     <string name="app_name">StudentVoice</string>
     <string name="hint">Start typing to filter the list...</string>
     <string name="welcome">
-    StudentVoice enables prospective and current university students in London to 
-    locate Uni’s, local attractions and view public reviews about a univeristy.\n\n
+    StudentVoice enables prospective and current university students to 
+    locate Universities, their local attractions and view public reviews about them. 
+    Currently, only London is supported.\n\n
     
     This is our first attempt at software development. Created during CDI Europe’s 
     pilot Apps For Good course and guided by Antony Marcano of RiverGlide, 
