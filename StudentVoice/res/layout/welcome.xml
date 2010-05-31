@@ -29,7 +29,7 @@
 	    android:padding="5sp"
 	    android:gravity="center_horizontal"
 	    android:layout_below="@+id/logo"
-	    android:autoLink="email"
+	    android:autoLink="all"
 	    />
 	<View
 		android:id="@+id/spacer"
