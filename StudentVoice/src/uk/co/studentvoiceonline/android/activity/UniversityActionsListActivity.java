@@ -25,18 +25,18 @@ public abstract class UniversityActionsListActivity extends ListActivity {
 		showTheActionsFor(theChosenUniversity());
 	}
 
-	protected University theChosenUniversity() {
-		return ViewUniversities.theChosenUniversity;
-	}
-	
     @Override
-    protected void onListItemClick(ListView l, View v, int thePositionSelected, long id) {
-        super.onListItemClick(l, v, thePositionSelected, id);
+    protected void onListItemClick(ListView l, View v, int theChosenItem, long id) {
+        super.onListItemClick(l, v, theChosenItem, id);
         
-        Action action = actions.get(thePositionSelected);
+        Action action = actions.get(theChosenItem);
         action.now();
     }
 	
+    protected University theChosenUniversity() {
+    	return ViewUniversities.theChosenUniversity;
+    }
+    
 	private void showTheNameOf(University theChosenUniversity) {
 		TextView text = (TextView)findViewById(R.id.university_name);
 		text.setText(theChosenUniversity.name() + "\n");
