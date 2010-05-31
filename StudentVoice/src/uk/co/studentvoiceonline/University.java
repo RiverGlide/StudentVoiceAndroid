@@ -6,9 +6,11 @@ public class University {
 	private final String ucasLink;
 	private final String qypeLink;
 	private final String placeId;
+	private final String postCode;
 
-	public University(String name, String placeId, String ucasLink, String qypeLink) {
+	public University(String name, String postCode, String placeId, String ucasLink, String qypeLink) {
 		this.name = name;
+		this.postCode = postCode;
 		this.placeId = placeId;
 		this.ucasLink = ucasLink;
 		this.qypeLink = qypeLink;
@@ -33,5 +35,9 @@ public class University {
 
 	public String placeId() {
 		return placeId;
+	}
+
+	public String postCode() {
+		return postCode;
 	}
 }

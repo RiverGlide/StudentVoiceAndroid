@@ -2,6 +2,7 @@ package uk.co.studentvoiceonline.android.activity;
 
 import static uk.co.studentvoiceonline.android.activity.action.MapSearch.*;
 import uk.co.studentvoiceonline.University;
+import uk.co.studentvoiceonline.android.R;
 import android.os.Bundle;
 
 public class FindLocalAttractions extends UniversityActionsListActivity {
@@ -11,7 +12,14 @@ public class FindLocalAttractions extends UniversityActionsListActivity {
 		University university = theChosenUniversity();
 		
 		actions = theFollowing(
-					placeSearchFor(this, university.placeId())
+					searchNear(this, university, "Bars and Clubs", R.drawable.bars_clubs),
+					searchNear(this, university, "Restaurants", R.drawable.eating_out),
+					searchNear(this, university, "Fast Food", R.drawable.fast_food),
+					searchNear(this, university, "Libraries", R.drawable.libraries),
+					searchNear(this, university, "Cinemas", R.drawable.cinema),
+					searchNear(this, university, "Coffee Bars", R.drawable.cafe),
+					searchNear(this, university, "Shopping Centres", R.drawable.shopping_centres),
+					searchNear(this, university, "Romantic Places", R.drawable.romantic_places)					
 				);
 		super.onCreate(savedInstanceState);
 	}

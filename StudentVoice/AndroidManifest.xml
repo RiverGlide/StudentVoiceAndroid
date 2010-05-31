@@ -15,17 +15,17 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.ViewUniversities"
-                  android:label="@string/app_name">
+                  android:label="London Universities">
             <intent-filter>
                 <action android:name="co.uk.studentvoice.intent.VIEW_UNIVERSITIES" />
                 <category android:name="co.uk.studentvoice.intent.VIEW_UNIVERSITIES" />
             </intent-filter>
         </activity>
         <activity android:name=".activity.ViewUniversityDetails"
-                  android:label="@string/app_name">
+                  android:label="About This University">
         </activity>
         <activity android:name=".activity.FindLocalAttractions"
-                  android:label="@string/app_name">
+                  android:label="Local Attractions">
         </activity>
     </application>
     <uses-sdk android:minSdkVersion="7" />
