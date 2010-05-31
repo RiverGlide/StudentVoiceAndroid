@@ -19,15 +19,16 @@ public final class R {
         public static final int fast_food=0x7f020005;
         public static final int icon=0x7f020006;
         public static final int libraries=0x7f020007;
-        public static final int map=0x7f020008;
-        public static final int reviews=0x7f020009;
-        public static final int romantic_places=0x7f02000a;
-        public static final int shopping_centres=0x7f02000b;
-        public static final int svicon=0x7f02000c;
-        public static final int svsplash=0x7f02000d;
-        public static final int svsplash_large=0x7f02000e;
-        public static final int svtopbar=0x7f02000f;
-        public static final int ucas=0x7f020010;
+        public static final int local_attractions=0x7f020008;
+        public static final int map=0x7f020009;
+        public static final int reviews=0x7f02000a;
+        public static final int romantic_places=0x7f02000b;
+        public static final int shopping_centres=0x7f02000c;
+        public static final int svicon=0x7f02000d;
+        public static final int svsplash=0x7f02000e;
+        public static final int svsplash_large=0x7f02000f;
+        public static final int svtopbar=0x7f020010;
+        public static final int ucas=0x7f020011;
     }
     public static final class id {
         public static final int action_icon=0x7f050000;
@@ -43,10 +44,11 @@ public final class R {
         public static final int action_item=0x7f030000;
         public static final int common_header=0x7f030001;
         public static final int common_separator=0x7f030002;
-        public static final int list_item=0x7f030003;
-        public static final int view_universities=0x7f030004;
-        public static final int view_university_detail=0x7f030005;
-        public static final int welcome=0x7f030006;
+        public static final int find_local_attractions=0x7f030003;
+        public static final int list_item=0x7f030004;
+        public static final int view_universities=0x7f030005;
+        public static final int view_university_detail=0x7f030006;
+        public static final int welcome=0x7f030007;
     }
     public static final class string {
         public static final int app_name=0x7f040000;

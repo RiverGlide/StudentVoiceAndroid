@@ -16,8 +16,7 @@ public class TypicalMapSearch extends Action {
 	private static final String VIEW = "android.intent.action.VIEW";
 
 	public TypicalMapSearch(String thingToSearchFor, Context activity) {
-		super(showAMapDisplaying(thingToSearchFor), ACTION_ITEM_LABEL, activity);
-		iconReference=R.drawable.map;
+		super(showAMapDisplaying(thingToSearchFor), ACTION_ITEM_LABEL, activity, R.drawable.map);
 	}
 	
 	private static Intent showAMapDisplaying(String thingToSearchFor) {

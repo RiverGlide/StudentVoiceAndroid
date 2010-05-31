@@ -7,9 +7,6 @@ import uk.co.studentvoiceonline.University;
 import uk.co.studentvoiceonline.android.R;
 import uk.co.studentvoiceonline.android.activity.action.Action;
 import uk.co.studentvoiceonline.android.activity.action.TypicalMapSearch;
-import uk.co.studentvoiceonline.android.activity.action.ViewLocalAttractions;
-import uk.co.studentvoiceonline.android.activity.action.ViewOnQypeWebsite;
-import uk.co.studentvoiceonline.android.activity.action.ViewOnUcasWebsite;
 import uk.co.studentvoiceonline.android.adapter.ActionsAdapter;
 import android.app.ListActivity;
 import android.os.Bundle;
@@ -17,13 +14,13 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class ViewUniversityDetails extends ListActivity {
+public class FindLocalAttractions extends ListActivity {
 
 	private List<Action> actions;
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.view_university_detail);
+		setContentView(R.layout.find_local_attractions);
 
 		University theChosenUniversity = ViewUniversities.theChosenUniversity; 
 		showTheNameOf(theChosenUniversity);
@@ -45,27 +42,12 @@ public class ViewUniversityDetails extends ListActivity {
 	private List<Action> theActionsFor(University theChosenUniversity) {
 		
 		List<Action> actions = Arrays.asList(
-				viewQypeReviewsFor(theChosenUniversity),
-				viewUcasInfoAbout(theChosenUniversity),
-				new ViewLocalAttractions(this),
-				mapFor(theChosenUniversity)
+				(Action)new TypicalMapSearch(theChosenUniversity.placeId(),this)
 				);
 		
 		setListAdapter(new ActionsAdapter(this,	actions));
 		
 		return actions;
-	}
-
-	private ViewOnQypeWebsite viewQypeReviewsFor(University theChosenUniversity) {
-		return new ViewOnQypeWebsite(theChosenUniversity.qypeLink(),this);
-	}
-
-	private ViewOnUcasWebsite viewUcasInfoAbout(University theChosenUniversity) {
-		return new ViewOnUcasWebsite(theChosenUniversity.ucasLink(),this);
-	}
-
-	private Action mapFor(University theChosenUniversity) {
-		return new TypicalMapSearch(theChosenUniversity.name(),this);
 	}
 
 	private void showTheNameOf(University theChosenUniversity) {

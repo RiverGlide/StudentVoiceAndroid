@@ -10,10 +10,11 @@ public class Action {
 	private final Context activity;
 	protected int iconReference;
 
-	public Action(Intent intent, String label, Context activity) {
+	public Action(Intent intent, String label, Context activity, int iconReference) {
 		this.intent = intent;
 		this.label = label;
 		this.activity = activity;
+		this.iconReference = iconReference;
 	}
 	
 	public void now() {
