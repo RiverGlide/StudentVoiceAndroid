@@ -19,7 +19,7 @@ public abstract class UniversityActionsListActivity extends ListActivity {
 	
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.find_local_attractions);
+		setContentView(R.layout.action_list);
 
 		showTheNameOf(theChosenUniversity());
 		showTheActionsFor(theChosenUniversity());

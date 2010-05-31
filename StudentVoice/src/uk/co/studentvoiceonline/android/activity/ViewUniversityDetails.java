@@ -16,9 +16,9 @@ public class ViewUniversityDetails extends UniversityActionsListActivity {
 		
 		actions = theFollowing(
 				viewQypeReviewsFor(this, university),
-				viewUcasInfoAbout(this, university),
 				showLocalAttractionsMenuFollowing(this),
-				searchMapsFor(this, university.name())
+				searchMapsFor(this, university.name()),
+				viewUcasInfoAbout(this, university)
 				);
 		
 		super.onCreate(savedInstanceState);
