@@ -1,59 +1,25 @@
 package uk.co.studentvoiceonline.android.activity;
 
 import java.util.Arrays;
-import java.util.List;
 
 import uk.co.studentvoiceonline.University;
-import uk.co.studentvoiceonline.android.R;
 import uk.co.studentvoiceonline.android.activity.action.Action;
 import uk.co.studentvoiceonline.android.activity.action.TypicalMapSearch;
 import uk.co.studentvoiceonline.android.activity.action.ViewLocalAttractions;
 import uk.co.studentvoiceonline.android.activity.action.ViewOnQypeWebsite;
 import uk.co.studentvoiceonline.android.activity.action.ViewOnUcasWebsite;
-import uk.co.studentvoiceonline.android.adapter.ActionsAdapter;
-import android.app.ListActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ListView;
-import android.widget.TextView;
 
-public class ViewUniversityDetails extends ListActivity {
-
-	private List<Action> actions;
+public class ViewUniversityDetails extends UniversityActionsListActivity {
 
 	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.view_university_detail);
-
-		University theChosenUniversity = ViewUniversities.theChosenUniversity; 
-		showTheNameOf(theChosenUniversity);
-		showTheActionsFor(theChosenUniversity);
-	}
-
-    @Override
-    protected void onListItemClick(ListView l, View v, int thePositionSelected, long id) {
-        super.onListItemClick(l, v, thePositionSelected, id);
-        
-        Action action = actions.get(thePositionSelected);
-        action.now();
-    }
-
-    private void showTheActionsFor(University theChosenUniversity) {
-    	actions = theActionsFor(theChosenUniversity);
-    }
-	
-	private List<Action> theActionsFor(University theChosenUniversity) {
-		
-		List<Action> actions = Arrays.asList(
-				viewQypeReviewsFor(theChosenUniversity),
-				viewUcasInfoAbout(theChosenUniversity),
+		actions = Arrays.asList(
+				viewQypeReviewsFor(theChosenUniversity()),
+				viewUcasInfoAbout(theChosenUniversity()),
 				new ViewLocalAttractions(this),
-				mapFor(theChosenUniversity)
+				mapFor(theChosenUniversity())
 				);
-		
-		setListAdapter(new ActionsAdapter(this,	actions));
-		
-		return actions;
+		super.onCreate(savedInstanceState);
 	}
 
 	private ViewOnQypeWebsite viewQypeReviewsFor(University theChosenUniversity) {
@@ -66,10 +32,5 @@ public class ViewUniversityDetails extends ListActivity {
 
 	private Action mapFor(University theChosenUniversity) {
 		return new TypicalMapSearch(theChosenUniversity.name(),this);
-	}
-
-	private void showTheNameOf(University theChosenUniversity) {
-		TextView text = (TextView)findViewById(R.id.university_name);
-		text.setText(theChosenUniversity.name() + "\n");
 	}
 }
