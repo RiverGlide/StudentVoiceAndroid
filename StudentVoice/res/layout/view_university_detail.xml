@@ -12,6 +12,8 @@
 	    android:layout_height="wrap_content"
 	    android:textSize="20sp"
 	    android:textColor="#505050"
+	    android:padding="10px"
+	    android:gravity="center_horizontal"
 	    />
 	<include layout="@layout/common_separator" />
 	<ListView android:id="@+id/android:list" 
