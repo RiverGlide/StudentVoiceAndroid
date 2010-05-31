@@ -11,6 +11,8 @@ public class FindLocalAttractions extends UniversityActionsListActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		University university = theChosenUniversity();
 		
+		message="What kind of thing are you interested in?";
+		
 		actions = theFollowing(
 					searchNear(this, university, "Bars and Clubs", R.drawable.bars_clubs),
 					searchNear(this, university, "Restaurants", R.drawable.eating_out),

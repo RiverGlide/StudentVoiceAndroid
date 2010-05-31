@@ -13,6 +13,8 @@ public class ViewUniversityDetails extends UniversityActionsListActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		University university =  theChosenUniversity();
 		
+		message = "So, what do you want to look into?";
+		
 		actions = theFollowing(
 				viewQypeReviewsFor(this, university),
 				informationOnGoogleFor(this, university.placeId()),

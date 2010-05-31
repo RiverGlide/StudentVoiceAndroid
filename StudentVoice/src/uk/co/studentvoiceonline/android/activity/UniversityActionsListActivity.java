@@ -16,16 +16,23 @@ import android.widget.TextView;
 public abstract class UniversityActionsListActivity extends ListActivity {
 	
 	protected List<Action> actions;
+	protected String message = "";
 	
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.action_list);
 
 		showTheNameOf(theChosenUniversity());
+		showThe(message);
 		showTheActionsFor(theChosenUniversity());
 	}
 
-    @Override
+    private void showThe(String message2) {
+		TextView tv = (TextView)findViewById(R.id.message);
+		tv.setText(message);
+	}
+
+	@Override
     protected void onListItemClick(ListView l, View v, int theChosenItem, long id) {
         super.onListItemClick(l, v, theChosenItem, id);
         
