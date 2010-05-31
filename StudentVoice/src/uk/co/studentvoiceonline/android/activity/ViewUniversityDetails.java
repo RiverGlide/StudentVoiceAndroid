@@ -1,6 +1,6 @@
 package uk.co.studentvoiceonline.android.activity;
 
-import static uk.co.studentvoiceonline.android.activity.action.TypicalMapSearch.searchMapsFor;
+import static uk.co.studentvoiceonline.android.activity.action.MapSearch.typicalMapSearchFor;
 import static uk.co.studentvoiceonline.android.activity.action.ViewLocalAttractions.showLocalAttractionsMenuFollowing;
 import static uk.co.studentvoiceonline.android.activity.action.ViewOnQypeWebsite.viewQypeReviewsFor;
 import static uk.co.studentvoiceonline.android.activity.action.ViewOnUcasWebsite.viewUcasInfoAbout;
@@ -17,7 +17,7 @@ public class ViewUniversityDetails extends UniversityActionsListActivity {
 		actions = theFollowing(
 				viewQypeReviewsFor(this, university),
 				showLocalAttractionsMenuFollowing(this),
-				searchMapsFor(this, university.name()),
+				typicalMapSearchFor(this, university.name()),
 				viewUcasInfoAbout(this, university)
 				);
 		

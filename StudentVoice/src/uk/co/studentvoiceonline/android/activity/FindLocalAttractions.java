@@ -1,6 +1,6 @@
 package uk.co.studentvoiceonline.android.activity;
 
-import static uk.co.studentvoiceonline.android.activity.action.TypicalMapSearch.searchMapsFor;
+import static uk.co.studentvoiceonline.android.activity.action.MapSearch.typicalMapSearchFor;
 import uk.co.studentvoiceonline.University;
 import android.os.Bundle;
 
@@ -11,7 +11,7 @@ public class FindLocalAttractions extends UniversityActionsListActivity {
 		University university = theChosenUniversity();
 		
 		actions = theFollowing(
-					searchMapsFor(this, university.placeId())
+					typicalMapSearchFor(this, university.placeId())
 				);
 		super.onCreate(savedInstanceState);
 	}
