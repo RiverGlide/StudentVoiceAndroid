@@ -27,7 +27,7 @@ public abstract class UniversityActionsListActivity extends ListActivity {
 		showTheActionsFor(theChosenUniversity());
 	}
 
-    private void showThe(String message2) {
+    private void showThe(String message) {
 		TextView tv = (TextView)findViewById(R.id.message);
 		tv.setText(message);
 	}

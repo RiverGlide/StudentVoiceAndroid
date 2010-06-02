@@ -16,10 +16,10 @@ public class ViewUniversityDetails extends UniversityActionsListActivity {
 		message = "So, what do you want to look into?";
 		
 		actions = theFollowing(
-				viewQypeReviewsFor(this, university),
 				informationOnGoogleFor(this, university.placeId()),
 				showLocalAttractionsMenuFollowing(this),
-				searchMapsFor(this, university.name()),
+				searchMapsFor(this, university.name() + " " + university.postCode()),
+				viewQypeReviewsFor(this, university),
 				viewUcasInfoAbout(this, university)
 				);
 		
