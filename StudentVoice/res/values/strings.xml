@@ -9,32 +9,33 @@
     
     This is our first attempt at software development. Created during CDI Europe’s 
     pilot Apps For Good course and guided by Antony Marcano of RiverGlide, 
-    this was implemented in 3 hours a day over 3 and a half weeks. 
-    Future updates include writing your own reviews, social network integration
-     and coverage of all UK universities.\n\n
+    this was implemented in 3 hours a day over 3 and a half weeks. Future updates 
+    include writing your own reviews, social network integration and coverage of all UK universities.\n\n
     
-    talktous@studentvoiceonline.co.uk\n
+    talktous@studentvoiceonline.co.uk\n\n
+    
+    - Carlos Mateus - Moses Sonson - Matthew Tanti -
    
     </string>
     <string name="credits">
     	StudentVoice by:\n
-   		-Carlos Mateus\n
-   		-Moses Sonson\n
-   		-Mathew Tanti\n\n
-   		
-   		Developer/Mentor:\n
-   		-Antony Marcano of RiverGlide\n\n
-   		
-   		Made possible by:\n
-   		-CDI Europe, Apps for Good\n\n
-   		
-   		Icons by:\n
-   		-androidicons.com\n\n
-   		
-   		Special Thanks to:\n
-   		-Richard Smartt (CDI)\n
-   		-Iris Lapinski (CDI)\n
-   		-Andy Palmer (RiverGlide)\n
-   		-Damani Marcano
+        		-Carlos Mateus\n
+        		-Moses Sonson\n
+        		-Mathew Tanti\n\n
+        		
+        		Developer/Mentor:\n
+        		-Antony Marcano of RiverGlide\n\n
+        		
+        		Made possible by:\n
+        		-CDI Europe, Apps for Good\n\n
+        		
+        		Icons by:\n
+        		-androidicons.com\n\n
+        		
+        		Special Thanks to:\n
+        		-Richard Smartt (CDI)\n
+        		-Iris Lapinski (CDI)\n
+        		-Andy Palmer (RiverGlide)\n
+        		-Damani Marcano
      </string>
 </resources>
