@@ -1,6 +1,6 @@
 package uk.co.studentvoiceonline.android.activity;
 
-import static uk.co.studentvoiceonline.android.activity.action.MapSearch.*;
+import static uk.co.studentvoiceonline.android.activity.action.MapSearch.searchNear;
 import uk.co.studentvoiceonline.University;
 import uk.co.studentvoiceonline.android.R;
 import android.os.Bundle;

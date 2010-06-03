@@ -1,7 +1,7 @@
 package uk.co.studentvoiceonline.android.activity;
 
-import static uk.co.studentvoiceonline.android.activity.action.MapSearch.searchMapsFor;
 import static uk.co.studentvoiceonline.android.activity.action.GooglePlaces.informationOnGoogleFor;
+import static uk.co.studentvoiceonline.android.activity.action.MapSearch.searchMapsFor;
 import static uk.co.studentvoiceonline.android.activity.action.ViewLocalAttractions.showLocalAttractionsMenuFollowing;
 import static uk.co.studentvoiceonline.android.activity.action.ViewOnQypeWebsite.viewQypeReviewsFor;
 import static uk.co.studentvoiceonline.android.activity.action.ViewOnUcasWebsite.viewUcasInfoAbout;

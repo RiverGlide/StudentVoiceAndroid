@@ -9,6 +9,8 @@ import uk.co.studentvoiceonline.android.activity.action.Action;
 import uk.co.studentvoiceonline.android.adapter.ActionsAdapter;
 import android.app.ListActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -32,6 +34,16 @@ public abstract class UniversityActionsListActivity extends ListActivity {
 		tv.setText(message);
 	}
 
+	public boolean onCreateOptionsMenu(Menu menu) {
+	    menu.add("Credits");
+	    return true;
+	}
+
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    	Credits.shownFor(this);
+	        return true;
+	}
+    
 	@Override
     protected void onListItemClick(ListView l, View v, int theChosenItem, long id) {
         super.onListItemClick(l, v, theChosenItem, id);

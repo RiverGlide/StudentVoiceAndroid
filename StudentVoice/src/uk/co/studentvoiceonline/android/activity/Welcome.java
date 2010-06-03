@@ -4,6 +4,8 @@ import uk.co.studentvoiceonline.android.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -27,4 +29,14 @@ public class Welcome extends Activity {
             }
         });
     }
+
+	public boolean onCreateOptionsMenu(Menu menu) {
+	    menu.add("Credits");
+	    return true;
+	}
+
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    	Credits.shownFor(this);
+	        return true;
+	}
 }

@@ -12,6 +12,8 @@ import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
 
@@ -37,6 +39,16 @@ public class ViewUniversities extends ListActivity {
         theChosenUniversity = theUniversityIn(thePositionSelected);
         showItsDetails();
     }
+    
+	public boolean onCreateOptionsMenu(Menu menu) {
+	    menu.add("Credits");
+	    return true;
+	}
+
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    	Credits.shownFor(this);
+	        return true;
+	}
 
 
 	////////////////////////////////////////////////////////
