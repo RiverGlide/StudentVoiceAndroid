@@ -16,24 +16,25 @@
     talktous@studentvoiceonline.co.uk\n
    
     </string>
-    <string name="credits">StudentVoice by:\n
-        		-Carlos Mateus\n
-        		-Moses Sonson\n
-        		-Mathew Tanti\n\n
-        		
-        		Developer/Mentor:\n
-        		-Antony Marcano of RiverGlide\n\n
-        		
-        		Made possible by:\n
-        		-CDI Europe, Apps for Good\n\n
-        		
-        		Icons by:\n
-        		-androidicons.com\n\n
-        		
-        		Special Thanks to:\n
-        		-Richard Smartt (CDI)\n
-        		-Iris Lapinski (CDI)\n
-        		-Andy Palmer (RiverGlide)\n
-        		-Damani Marcano
+    <string name="credits">
+    	StudentVoice by:\n
+   		-Carlos Mateus\n
+   		-Moses Sonson\n
+   		-Mathew Tanti\n\n
+   		
+   		Developer/Mentor:\n
+   		-Antony Marcano of RiverGlide\n\n
+   		
+   		Made possible by:\n
+   		-CDI Europe, Apps for Good\n\n
+   		
+   		Icons by:\n
+   		-androidicons.com\n\n
+   		
+   		Special Thanks to:\n
+   		-Richard Smartt (CDI)\n
+   		-Iris Lapinski (CDI)\n
+   		-Andy Palmer (RiverGlide)\n
+   		-Damani Marcano
      </string>
 </resources>
