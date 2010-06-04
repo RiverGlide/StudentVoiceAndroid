@@ -36,7 +36,7 @@ public class Welcome extends Activity {
         }
 	}
 
-	private boolean whetherThisScreenWillBeShownAgain() {
+	private boolean whetherThisScreenWillBeShownAgain() {//TODO: [AM] I don't like this. Must improve readability
 		prefs = getPreferences(MODE_PRIVATE);
         CheckBox showAgain = (CheckBox)findViewById(R.id.show_again);
         
