@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="uk.co.studentvoiceonline.android"
       android:versionCode="2"
-      android:versionName="1.0.20100602">
+      android:versionName="1.0.20100604">
     <application 
     	android:label="@string/app_name" 
     	android:icon="@drawable/svicon" 
