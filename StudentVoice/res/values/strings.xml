@@ -8,15 +8,12 @@
     Currently, only London is supported.\n\n
     
     This is our first attempt at software development. Created during CDI Europe’s 
-    pilot Apps For Good course and guided by Antony Marcano of RiverGlide, 
-    this was implemented in 3 hours a day over 3 and a half weeks. Future updates 
+    pilot Apps For Good course this was implemented in 3 hours a day over 3 and a half weeks. Future updates 
     include writing your own reviews, social network integration and coverage of all UK universities.\n\n
     
-    talktous@studentvoiceonline.co.uk\n\n
+    talktous@studentvoiceonline.co.uk
     
-    - Carlos Mateus - Moses Sonson - Matthew Tanti -
-   
-    </string>
+     </string>
     <string name="credits">
     	StudentVoice by:\n
         		-Carlos Mateus\n
