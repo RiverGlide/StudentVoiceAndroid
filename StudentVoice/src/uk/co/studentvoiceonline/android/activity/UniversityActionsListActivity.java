@@ -3,8 +3,8 @@ package uk.co.studentvoiceonline.android.activity;
 import java.util.Arrays;
 import java.util.List;
 
+import uk.co.studentvoiceonline.R;
 import uk.co.studentvoiceonline.University;
-import uk.co.studentvoiceonline.android.R;
 import uk.co.studentvoiceonline.android.activity.action.Action;
 import uk.co.studentvoiceonline.android.adapter.ActionsAdapter;
 import android.app.ListActivity;

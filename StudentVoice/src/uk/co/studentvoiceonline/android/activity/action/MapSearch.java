@@ -1,7 +1,7 @@
 package uk.co.studentvoiceonline.android.activity.action;
 
+import uk.co.studentvoiceonline.R;
 import uk.co.studentvoiceonline.University;
-import uk.co.studentvoiceonline.android.R;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;

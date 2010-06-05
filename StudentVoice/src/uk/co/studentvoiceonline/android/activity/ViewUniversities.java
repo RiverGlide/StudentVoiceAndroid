@@ -5,9 +5,9 @@ import static uk.co.studentvoiceonline.android.adapter.UniversitiesAdapter.forLi
 
 import java.util.List;
 
+import uk.co.studentvoiceonline.R;
 import uk.co.studentvoiceonline.University;
 import uk.co.studentvoiceonline.UniversityExpert;
-import uk.co.studentvoiceonline.android.R;
 import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Intent;

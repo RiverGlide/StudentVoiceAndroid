@@ -2,7 +2,7 @@ package uk.co.studentvoiceonline.android.adapter;
 
 import java.util.List;
 
-import uk.co.studentvoiceonline.android.R;
+import uk.co.studentvoiceonline.R;
 import uk.co.studentvoiceonline.android.activity.action.Action;
 import android.content.Context;
 import android.view.View;

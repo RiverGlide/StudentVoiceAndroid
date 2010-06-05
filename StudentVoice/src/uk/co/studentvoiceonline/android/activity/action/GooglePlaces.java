@@ -1,6 +1,6 @@
 package uk.co.studentvoiceonline.android.activity.action;
 
-import uk.co.studentvoiceonline.android.R;
+import uk.co.studentvoiceonline.R;
 import android.content.Context;
 
 public class GooglePlaces extends ViewWebLinkAction {

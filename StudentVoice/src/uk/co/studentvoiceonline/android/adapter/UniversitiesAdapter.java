@@ -1,8 +1,8 @@
 package uk.co.studentvoiceonline.android.adapter;
 import java.util.List;
 
+import uk.co.studentvoiceonline.R;
 import uk.co.studentvoiceonline.University;
-import uk.co.studentvoiceonline.android.R;
 import android.content.Context;
 import android.widget.ArrayAdapter;
 

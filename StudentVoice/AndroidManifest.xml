@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="uk.co.studentvoiceonline.android"
+      package="uk.co.studentvoiceonline"
       android:versionCode="2"
       android:versionName="1.0.20100604">
     <application 
     	android:label="@string/app_name" 
     	android:icon="@drawable/svicon" 
     	android:theme="@android:style/Theme.Light">
-        <activity android:name=".activity.Welcome"
+        <activity android:name=".android.activity.Welcome"
                   android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.ViewUniversities"
+        <activity android:name=".android.activity.ViewUniversities"
                   android:label="London Universities">
             <intent-filter>
                 <action android:name="co.uk.studentvoice.intent.VIEW_UNIVERSITIES" />
                 <category android:name="co.uk.studentvoice.intent.VIEW_UNIVERSITIES" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.ViewUniversityDetails"
+        <activity android:name=".android.activity.ViewUniversityDetails"
                   android:label="About This University">
         </activity>
-        <activity android:name=".activity.FindLocalAttractions"
+        <activity android:name=".android.activity.FindLocalAttractions"
                   android:label="Local Attractions">
         </activity>
     </application>

@@ -1,6 +1,6 @@
 package uk.co.studentvoiceonline.android.activity;
 
-import uk.co.studentvoiceonline.android.R;
+import uk.co.studentvoiceonline.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;

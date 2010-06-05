@@ -1,6 +1,6 @@
 package uk.co.studentvoiceonline.android.activity.action;
 
-import uk.co.studentvoiceonline.android.R;
+import uk.co.studentvoiceonline.R;
 import uk.co.studentvoiceonline.android.activity.FindLocalAttractions;
 import android.content.Context;
 import android.content.Intent;
